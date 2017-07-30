@@ -1,0 +1,129 @@
+/*
+・Font指定
+・Theme Color list
+・a-tag-style
+・選択時の色指定
+・clearfix
+・container
+・global_nav
+・read_more_botton
+*/
+
+html{
+    width: 100%;
+    font-family: "Noto Sans Japanese";
+    font-weight: 200;
+    font-size: 62.5%;
+}
+
+#root {
+    --white:            #FFFFFF;
+    --cbc-image:        #fff200;
+    --cbc-image-hover:  #fffa99;
+    --cover-box:        rgba(43, 33, 30, 0.75);
+    --cover-box-hover:  rgba(250, 250, 250, 0.4);
+    --link-text:        #000;
+  }
+
+  a {transition: .2s;}
+  a:link {color: var(--link-text); text-decoration: none; }
+  a:visited { color: var(--link-text); text-decoration: none; }
+  a:hover { color: #666;}
+
+  ::selection {background:var(--cbc-image); /* Safari */}
+  ::-moz-selection {background:var(--cbc-image); /* Firefox */}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.5
+}
+
+.global_nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  font-size: 1.5rem;
+  z-index: 100;
+}
+.g_nav_logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  padding: 10px 30px;
+  float: left;
+}
+.global_nav ul {
+  padding-left: 200px;
+}
+.global_nav li {
+  display: block;
+}
+.global_nav li a {
+  display: block;
+  width: 12%;
+  max-width: 200px;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  transition: .5s;
+}
+.global_nav li a:hover {
+  background-color: var(--cbc-image);
+  color: var(--link-text);
+}
+
+.g_nav_estimate_btn {
+  position: absolute;
+  width: 15%;
+  max-width: 200px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  background-color: var(--cbc-image);
+  line-height: 50px;
+  transition: .5s;
+  text-align: center;
+  transition: .3s;
+}
+.g_nav_estimate_btn:hover {
+  background-color: var(--cover-box);
+  color: var(--white);
+}
+.g_nav_estbtn_txt {
+  padding-left: 0.5rem;
+}
+
+button.read_more {
+  cursor: pointer;
+  width: 250px;
+  height: 40px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--white);
+  text-align: center;
+  vertical-align: super;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.5;
+  transition: 0.2s;
+}
+button.read_more:hover {
+  border-color: var(--cover-box-hover);
+}
