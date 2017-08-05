@@ -1,11 +1,3 @@
-#root {
-    --white:            #FFFFFF;
-    --cbc-image:        #fff200;
-    --cbc-image-hover:  #fffa99;
-    --light-brown:      #e2dad0;
-    --cover-box:        rgba(43, 33, 30, 0.75);
-    --link-text:        #000;
-  }
 
 .header_top_video {
   width: 100%;
@@ -51,33 +43,55 @@
 }
 
 .about_background_img {
+  position: relative;
   width: 100%;
   height: 700px;
   background-image: url('../img/picture/S1450955248884_1.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 0 75%;
 }
 .coverd_box {
+  position: absolute;
   background-color: var(--cover-box);
   width: 100%;
+  padding: 50px 0;
   height: auto;
+  color: var(--white);
+  font-weight: 100;
 }
 
 .about_covered_box {
-  padding: 60px 150px;
+  bottom: 30px;
 }
+  .about_font_img {
+    margin-left: 150px;
+    width: 250px;
+    float: left;
+  }
   .about_text {
     color: var(--white);
     font-weight: 100;
     float: left;
     width: 40%;
-    padding-top: 10px;
-    margin-right: 50px;
+    padding-top: 45px;
+    margin-left: 80px;
+    margin-right: 40px;
+  }
+  .about_rdmore {
+    margin-top: 40px;
   }
 
 .about_solution_content {
+  padding: 70px 150px;
   background-color: var(--light-brown);
-  padding: 100px 150px;
+}
+.about_jagged_border {
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(-135deg, var(--light-brown) 10px, transparent 0) 0 10px, linear-gradient(135deg, var(--light-brown) 10px, #ffffff 0) 0 10px;
+  background-color: var(--light-brown);
+  background-size: 20px 20px;
+  background-position: 0;
 }
   .about_solution_content ul {
     display: flex;
@@ -92,11 +106,67 @@
     padding: 0 2%;
   }
 
+  .about_sol_cnt_img {
+    width: 140px;
+  }
   .about_sol_cnt_title {
     font-size: 2.3rem;
     font-weight: 300;
-    padding-top: 20px;
-  }
-  .about_sol_cnt_text {
     padding-top: 15px;
   }
+  .about_sol_cnt_text {
+    padding: 15px 0 20px;
+  }
+
+.stores {
+  padding: 100px 0;
+}
+.stores_rdmore {
+  display: block;
+  margin: 20px auto 0;
+}
+  .stores_rdmore span {
+    border-color: var(--cover-box);
+    color: #000;
+  }
+  .stores_rdmore span:nth-child(2) {
+    color: #000;
+  }
+  .stores_rdmore:hover span:nth-child(2) {
+    opacity: 0;
+  }
+
+.store_making_background_img {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url('../img/picture/S1461336902893_1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+  .store_making_covered_box {
+    padding: 60px 0;
+  }
+
+.store_making_covered_box {
+  top: 50px;
+}
+
+.section_title {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: 15px 0;
+}
+
+.section_text {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.store_making_rdmore {
+  display: block;
+  margin: 20px auto 0;
+}
